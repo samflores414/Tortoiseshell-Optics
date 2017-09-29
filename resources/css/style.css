@@ -188,11 +188,12 @@ footer span {
   }
 
   .container {
-    position: fixed;
+    max-width: 100%;
   }
 
   .header {
-    max-height: 22rem;
+    background-size: contain;
+    background-repeat: no-repeat;
   }
 
   .main-banner {
@@ -213,18 +214,19 @@ footer span {
   }
 
   .container {
-    position: fixed;
+    max-width: 100%;
   }
 
-  .header {
-    background-position: 20%;
-    height: 17rem;
+  .flex-container {
+    background-size: contain;
+    background-repeat: no-repeat;
   }
 
   .main-banner {
     margin-top: 9rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
+    width: 100%;
   }
 
   h1 {
@@ -235,6 +237,7 @@ footer span {
   .services-container {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
   }
 
   .services {
@@ -242,5 +245,13 @@ footer span {
     font-size: 0.77rem;
     margin-bottom: 1.54rem;
     margin-top: 3.77rem;
+  }
+
+  .philosophy {
+    max-width: 100%;
+  }
+
+  .appointments {
+    max-width: 100%;
   }
 }
