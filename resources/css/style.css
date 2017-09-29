@@ -39,12 +39,14 @@ h1 {
   height: 1.5rem;
   padding-right: 1rem;
 }
-
-.container {
+nav {
   color: white;
   max-width: 960px;
   margin-top: 1rem;
   background-color: cadetblue;
+}
+
+.container {
   display: flex;
   justify-content: space-between;
 }
