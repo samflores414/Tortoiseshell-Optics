@@ -178,4 +178,69 @@ footer span {
   color: black
 }
 
-@media only screen ()
+/*media queries*/
+
+/*query for tablet*/
+
+@media only screen and (max-width: 768px) {
+  body {
+    max-width: 100%;
+  }
+
+  .container {
+    position: fixed;
+  }
+
+  .header {
+    max-height: 22rem;
+  }
+
+  .main-banner {
+    padding: 0.75rem 4rem;
+    margin-right: 2rem;
+  }
+
+  h1 {
+    font-size: 1.33rem;
+  }
+}
+
+/*query for smartphone*/
+
+@media only screen and (max-width: 480px){
+  body {
+    width: 100%;
+  }
+
+  .container {
+    position: fixed;
+  }
+
+  .header {
+    background-position: 20%;
+    height: 17rem;
+  }
+
+  .main-banner {
+    margin-top: 9rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  h1 {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .services-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .services {
+    font-family: Helvetica;
+    font-size: 0.77rem;
+    margin-bottom: 1.54rem;
+    margin-top: 3.77rem;
+  }
+}
