@@ -1,0 +1,154 @@
+
+html {
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+span .logo {
+  font-family: Helvetica;
+  font-size: 1rem;
+  color: white;
+}
+
+.main-banner {
+  padding: 1.5rem 5rem 1.5rem 5rem;
+  background-color: white;
+  display: inline-block;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+header .flex-container {
+  justify-content: flex-end;
+}
+
+h1 {
+  font-family: Helvetica;
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+.logo {
+  padding-top: 1rem;
+  padding-left: 2rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.logo img {
+  height: 1.5rem;
+  padding-right: 1rem;
+}
+
+.container {
+  color: white;
+  max-width: 960px;
+  margin-top: 1rem;
+  background-color: cadetblue;
+  display: flex;
+  justify-content: space-between;
+}
+
+h1 {
+  font-family: Helvetica;
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+header {
+  background-image: url(../images/glasses-bg.png);
+  background-size: cover;
+  height: 30rem;
+  background-position: center;
+  width: 100%;
+}
+
+.navigation {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+span {
+  padding-right: 2rem;
+  color: white;
+}
+
+.services {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 8rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.exams {
+  margin-right: 3rem;
+}
+
+.exams img {
+  width: 3.5rem;
+}
+
+.fittings {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.fittings img {
+  width: 5rem;
+}
+
+.delivery {
+  margin-left: 3rem;
+}
+
+.delivery img {
+  width: 5rem;
+}
+
+.support {
+  display: flex;
+  flex-direction: row;
+}
+
+.philosophy {
+  max-width: 35%;
+}
+
+.appointments {
+  max-width: 35%;
+}
+
+h3 {
+  font-family: Helvetica;
+  background-color: cadetblue;
+  font-weight: bold;
+  color: white;
+  max-width: 10rem;
+  padding: 0.5rem 1.25rem;
+  margin-bottom: 1rem;
+}
+
+footer {
+  background-color: azure;
+  max-width: 960px;
+  margin-top: 5rem;
+  display: flex;
+  align-items: center;
+}
+
+footer img {
+  height: 1.5rem;
+  margin: 4rem 1rem 4rem 4rem;
+}
+
+footer span {
+  color: black
+}
