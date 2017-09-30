@@ -50,6 +50,10 @@ span .logo {
   color: white;
 }
 
+.hiddendesktop {
+  display: none;
+}
+
 /*header with background image*/
 
 header {
@@ -182,18 +186,19 @@ footer span {
 
 /*query for tablet*/
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
   body {
-    max-width: 100%;
+    margin: 0;
   }
 
-  .container {
-    max-width: 100%;
+  nav {
+    width: 100%
   }
 
-  .header {
-    background-size: contain;
-    background-repeat: no-repeat;
+  header {
+    width: 100%;
+    margin-top: 0;
+    height: 22rem;
   }
 
   .main-banner {
@@ -204,54 +209,119 @@ footer span {
   h1 {
     font-size: 1.33rem;
   }
-}
+
+  footer {
+    width: 100%;
+  }
+
+  .support {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+  }
 
 /*query for smartphone*/
 
-@media only screen and (max-width: 480px){
-  body {
+@media only screen and (max-width: 470px){
+  html {
+    font-size: 16px;
+  }
+
+  nav {
     width: 100%;
   }
 
-  .container {
-    max-width: 100%;
-  }
-
-  .flex-container {
+  header {
     background-size: contain;
     background-repeat: no-repeat;
+    height: 17rem
   }
 
-  .main-banner {
-    margin-top: 9rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    width: 100%;
+  header span {
+    display: none;
   }
 
   h1 {
     font-size: 1rem;
+  }
+
+  .navigation {
+    display: none;
+  }
+
+  .hiddendesktop {
+    display: flex;
+  }
+
+  .container {
+    height: 17rem;
+    background-position: 20%;
+  }
+
+  .main-banner {
+    top: 9rem;
+    padding: 1rem 0;
+    background-color: white;
+    margin-right: 0;
+    font-size: 1rem;
+    width: 100%;
+  }
+
+  .main-banner h1 {
     text-align: center;
   }
 
   .services-container {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 3rem;
   }
 
-  .services {
-    font-family: Helvetica;
-    font-size: 0.77rem;
-    margin-bottom: 1.54rem;
-    margin-top: 3.77rem;
+  .support {
+    display: flex;
+    flex-direction: column;
+  }
+
+  h3 {
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  p {
+    padding: 1rem;
+    font-size: .77rem;
   }
 
   .philosophy {
-    max-width: 100%;
+    width: 90%;
+    padding: 1rem;
   }
 
   .appointments {
-    max-width: 100%;
+    width: 90%;
+    padding: 1rem;
   }
+
+  h3 {
+    width: 90%;
+    text-align: center;
+  }
+
+  footer {
+    width: 60%;
+    justify-content: center;
+  }
+
+  footer span {
+    display: none;
+  }
+
+  footer img {
+    margin: 0 auto;
+  }
+
 }
