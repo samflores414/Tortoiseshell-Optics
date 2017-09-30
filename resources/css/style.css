@@ -220,7 +220,7 @@ footer span {
 
 /*query for smartphone*/
 
-@media only screen and (max-width: 470px){
+@media only screen and (max-width: 600px){
   html {
     font-size: 16px;
   }
@@ -230,7 +230,7 @@ footer span {
   }
 
   header {
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     height: 17rem
   }
@@ -249,10 +249,11 @@ footer span {
 
   .hiddendesktop {
     display: flex;
+    justify-content: flex-end;
+
   }
 
   .container {
-    height: 17rem;
     background-position: 20%;
   }
 
@@ -290,17 +291,21 @@ footer span {
     text-align: center;
   }
 
+  .aboutBlock h3 {
+    width: 100%;
+    text-align: center;
+  }
+
   footer {
-    width: 60%;
+    width: 100%;
+  }
+
+  footer img {
+    display: flex;
     justify-content: center;
   }
 
   footer span {
-    display: none;
+    display: none
   }
-
-  footer img {
-    margin: 0 auto;
-  }
-
 }
